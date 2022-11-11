@@ -5,7 +5,7 @@ fetch(url = 'https://www.breakingbadapi.com/api/characters')
     .then(data => {
         for (let i = 0; i < data.length; i++) {
             let char_data = data[i]
-            let markUp = `<a href="character.html" id="characterIitem" class="character_item">
+            let markUp = `<a href="character.html?id=${char_data['char_id']}" id="characterIitem" class="character_item">
                                 <div class="img">
                                 <img src="${char_data['img']}" alt="" />
                                 </div>
@@ -15,8 +15,10 @@ fetch(url = 'https://www.breakingbadapi.com/api/characters')
         }
     })
 
+let urlParams = new URLSearchParams(window.location.search);
+let param = urlParams.get('id');
 
-fetch(url = 'https://www.breakingbadapi.com/api/characters/1')
+fetch(url = `https://www.breakingbadapi.com/api/characters/${param}`)
     .then(response => {
         return response.json();
     })
