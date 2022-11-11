@@ -4,26 +4,26 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
   <body>
     <div class="wrapper">
-      <div class="characters_block">
-        <div id="characterIitem" class="character_item">
-          <img id="img" src="" alt="" class="image" />
-          <p id="name" class="name"></p>
-        </div>
+      <div class="logo_block">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Breaking_Bad_logo.svg/554px-Breaking_Bad_logo.svg.png?20140705132756"
+          alt=""
+          class="logo_img"
+        />
       </div>
+
+      <div class="characters_block"></div>
     </div>
     <script
       src="https://code.jquery.com/jquery-3.6.1.js"
       integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
       crossorigin="anonymous"
     ></script>
-    <script>
-      $.ajax({
-        url: "https://www.breakingbadapi.com/api/characters",
-      });
-    </script>
+    <script src="./main.js"></script>
   </body>
 </html>

@@ -1,0 +1,41 @@
+.wrapper {
+  padding: 0px 100px;
+}
+
+.characters_block {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.character_item {
+  margin: 20px 7px;
+  text-decoration: none;
+}
+
+.character_item .img img {
+  width: 200px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.name_label {
+  color: #000000;
+  margin: 0px 0px 0px 0px;
+  transition: all ease 0.2s;
+  text-decoration: none;
+}
+
+.name_label:hover {
+  color: #1f6032;
+}
+
+.logo_img {
+  width: 185px;
+}
+
+.logo_block {
+  display: flex;
+  justify-content: center;
+  margin: 7px 0px 15px 0px;
+}
