@@ -1,5 +1,9 @@
+body {
+  background-color: #1f6032;
+}
+
 .wrapper {
-  padding: 0px 100px;
+  padding: 10px 100px 70px 100px;
 }
 
 .characters_block {
@@ -11,6 +15,12 @@
 .character_item {
   margin: 20px 7px;
   text-decoration: none;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.character_item .img {
+  height: 300px;
 }
 
 .character_item .img img {
@@ -22,8 +32,10 @@
 .name_label {
   color: #000000;
   margin: 0px 0px 0px 0px;
+  padding: 7px 7px;
   transition: all ease 0.2s;
   text-decoration: none;
+  background: #ffffff;
 }
 
 .name_label:hover {
@@ -37,5 +49,22 @@
 .logo_block {
   display: flex;
   justify-content: center;
-  margin: 7px 0px 15px 0px;
+  margin: 7px 0px 25px 0px;
+}
+
+.character_block {
+  border-radius: 5px;
+  overflow: hidden;
+  width: 550px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.info_block {
+  padding: 0px 13px;
+}
+
+.character_block .img img {
+  height: 550px;
+  width: 100%;
 }
